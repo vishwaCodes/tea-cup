@@ -13,8 +13,7 @@ Your go-to place for everything tea realated! An E-Commerce Store just for tea, 
 <img width="892" alt="Screen Shot 2021-03-02 at 10 57 16 AM" src="https://user-images.githubusercontent.com/73917422/109675768-15e21f80-7b46-11eb-8d68-c47f6e137fb0.png">
 
 # Data Models
-<img width="1028" alt="Screen Shot 2021-03-02 at 11 51 30 AM" src="https://user-images.githubusercontent.com/73917422/109683766-a839f180-7b4d-11eb-8305-ae4e971459ca.png">
-
+<img width="927" alt="Screen Shot 2021-03-02 at 12 29 45 PM" src="https://user-images.githubusercontent.com/73917422/109689179-09b08f00-7b53-11eb-9dc7-0a5abfa86319.png">
 
 
 # Unsplash API
