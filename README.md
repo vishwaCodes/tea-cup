@@ -1,5 +1,5 @@
 # Tea Cup
-Your go-to place for everything tea realated!
+Your go-to place for everything tea realated! An E-Commerce Store just for tea, with the modern Apothecary feel reeling the User in.
 
 # Teachnologies Used
 - Django
