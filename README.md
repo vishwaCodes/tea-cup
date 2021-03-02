@@ -104,4 +104,4 @@ unsplash.photos.getPhoto("pFqrYbhIAXs");
 7. User should be able to read some facts and Education Points about Teas.
 8. User should be able to join the Tea Club/Chat Room.
 9. User should be able to navigate to a Brewing Guide Section.
-10. User should be view the history of Tea Section.
+10. User should be able to view the history of Tea Section.
