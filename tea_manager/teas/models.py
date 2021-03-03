@@ -8,4 +8,4 @@ class Tea(models.Model):
   image = models.FileField(upload_to='images/', blank=True, null=True)
 
   def __str__(self):
-    return self.name
+    return self.name 
