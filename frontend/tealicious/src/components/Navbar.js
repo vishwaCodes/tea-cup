@@ -24,6 +24,9 @@ class Navbar extends Component {
             <li className="nav-item">
               <a className="nav-link" href="#">Shop</a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Wishlist</a>
+            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <div className="dropdown-menu">
