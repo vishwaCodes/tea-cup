@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tea = (props) => {
+const Tea = () => {
   return (
     <div>
       

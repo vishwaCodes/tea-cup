@@ -3,7 +3,7 @@ import React from 'react';
 const TeaContainer = () => {
   return (
     <div>
-      {props.children}
+      {/* {props.children} */}
     </div>
   );
 };
