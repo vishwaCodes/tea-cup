@@ -1,8 +1,10 @@
 from rest_framework import routers
 from .api import TeaViewSet
+from .api import WishlistViewSet
 
 router = routers.DefaultRouter()
 router.register('api/teas', TeaViewSet, 'teas')
+router.register('api/wishlist', WishlistViewSet, 'wishlist')
 
 urlpatterns = router.urls
 

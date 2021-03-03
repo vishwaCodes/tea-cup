@@ -1,3 +1,6 @@
-import { combineReducers } from 'redux';
+// import { combineReducers } from 'redux';
+// import TeasList from '../components/TeasList';
 
-export default combineReducers({});
+// export default combineReducers({
+//   teaslist: TeasList
+// });
