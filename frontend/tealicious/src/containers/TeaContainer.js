@@ -1,9 +1,9 @@
 import React from 'react';
 
-const TeaContainer = () => {
+const TeaContainer = (props) => {
   return (
     <div>
-      {/* {props.children} */}
+      {props.children}
     </div>
   );
 };
