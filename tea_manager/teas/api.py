@@ -9,3 +9,4 @@ class TeaViewSet(viewsets.ModelViewSet):
     permissions.AllowAny
   ]
   serializer_class = TeaSerializer
+  
