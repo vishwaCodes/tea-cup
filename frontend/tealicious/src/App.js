@@ -1,15 +1,13 @@
 import React from 'react';
-import TeaContainer from './containers/TeaContainer';
-import Header from './components/Header';
+import routes from './config/routes';
 
 import './App.css';
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <TeaContainer />
+    <div>
+      {routes}
     </div>
   );
 }

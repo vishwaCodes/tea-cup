@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TeaModel from '../models/Tea';
-import Teas from '../components/Teas';
+import TeasList from '../components/TeasList';
 
 class TeaContainer extends Component {
 
@@ -26,7 +26,7 @@ class TeaContainer extends Component {
   render() {
     return (
       <div className="teasComponent">
-        <Teas 
+        <TeasList 
           teas={this.state.teas}
         />
       </div>

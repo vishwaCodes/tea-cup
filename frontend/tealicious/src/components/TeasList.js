@@ -1,7 +1,7 @@
 import React from 'react';
 import Tea from './Tea';
 
-const Teas = (props) => {
+const TeasList = (props) => {
   let teas = props.teas.map((tea) => {
     return (
       <Tea
@@ -17,4 +17,4 @@ const Teas = (props) => {
   );
 };
 
-export default Teas; 
+export default TeasList; 

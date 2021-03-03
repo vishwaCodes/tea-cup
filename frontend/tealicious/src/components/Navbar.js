@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Header extends Component {
+class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -16,13 +16,13 @@ class Header extends Component {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Features</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <a className="nav-link" href="/teas">Teas</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Shop</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -45,4 +45,4 @@ class Header extends Component {
   };
 };
 
-export default Header; 
+export default Navbar;
