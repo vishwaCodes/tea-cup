@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import routes from './config/routes';
 import TeaContainer from './containers/TeaContainer'
 
