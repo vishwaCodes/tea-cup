@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import WishlistModel from '../models/Wishlist';
 import Wishlists from '../components/Wishlists';
 
+import '../App.css';
+
 class WishlistContainer extends Component {
 
   constructor() {
@@ -25,7 +27,8 @@ class WishlistContainer extends Component {
 
   render() {
     return (
-      <div className="wishlistsComponent">
+      <div className="wishlistContainer">
+      <h2>Your Wishlist</h2>
         <Wishlists 
           wishlists={this.state.wishlists}
         />
