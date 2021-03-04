@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CreateWishlistForm from '../components/CreateWishlistForm';
 import WishlistModel from '../models/Wishlist';
 import Wishlists from '../components/Wishlists';
 
@@ -25,13 +26,30 @@ class WishlistContainer extends Component {
     });
   };
 
+  createWishlist = (wishlist) => {
+    let newWishlist = {
+      name: wishlist,
+    };
+
+    WishlistModel.create(newWishlist).then((res) => {
+      console.log('res', res);
+      let wishlists = this.state.wishlists;
+      wishlists.push(res.data);
+      this.setState({ wishlists: wishlists });
+    });
+  };
+
   render() {
     return (
       <div className="wishlistContainer">
       <h2>Your Wishlist</h2>
-        <Wishlists 
-          wishlists={this.state.wishlists}
-        />
+      <CreateWishlistForm 
+        createWishlist={this.createWishlist}
+      />
+
+      <Wishlists 
+        wishlists={this.state.wishlists}
+      />
       </div>
     );
   };

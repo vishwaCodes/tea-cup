@@ -1,7 +1,7 @@
 from teas.models import Tea
 from teas.models import Wishlist
 from rest_framework import viewsets, permissions
-from .serializers import TeaSerializer
+from .serializers import TeaSerializer, WishlistSerializer
 
 # Tea Viewset
 class TeaViewSet(viewsets.ModelViewSet):
@@ -14,7 +14,6 @@ class TeaViewSet(viewsets.ModelViewSet):
 
 # Wishlist Viewset
 class WishlistViewSet(viewsets.ModelViewSet):
-
   queryset = Wishlist.objects.all()
   permission_classes = [
     permissions.AllowAny
@@ -24,7 +23,7 @@ class WishlistViewSet(viewsets.ModelViewSet):
   #   permissions.IsAuthenticated
   # ]
 
-  serializer_class = TeaSerializer
+  serializer_class = WishlistSerializer
 
   # def get_queryset(self):
   #   return self.request.user.wishlist.all()

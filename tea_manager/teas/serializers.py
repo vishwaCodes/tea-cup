@@ -6,9 +6,9 @@ from teas.models import Wishlist
 class TeaSerializer(serializers.ModelSerializer):
   class Meta:
     model = Tea
-    fields = '__all__'
+    fields = ('name', 'description', 'image', 'user',)
 
 class WishlistSerializer(serializers.ModelSerializer):
   class Meta:
     model = Wishlist
-    fields = 'name'
+    fields = ('name',)

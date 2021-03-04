@@ -29,6 +29,7 @@ class CreateWishlistForm extends Component {
             type='text' id='newItemDescription'
             placeholder='Which tea would you like to add?'
             value={this.state.wishlist}
+            name='name'
           />
           <button type='submit' id='addTask' className='btn'>Add Tea</button>
         </form>
