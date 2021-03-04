@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import TeaContainer from '../containers/TeaContainer';
 import HomePage from '../pages/HomePage';
 import SignupPage from '../pages/SignupPage';

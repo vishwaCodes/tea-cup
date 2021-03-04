@@ -17,9 +17,10 @@ class LoginPage extends Component {
   render() {
     const { username, password } = this.state;
     return (
+      <div className="container">
       <div className="col-md-6 m-auto">
         <div className="card card-body mt-5">
-          <h2 className="text-center">Log In</h2>
+          <h2 className="text-center">Welcome to Tealicious</h2>
           <form onSubmit={this.onSubmit}>
             <div className="form-group">
               <label>Username</label>
@@ -51,6 +52,7 @@ class LoginPage extends Component {
             </p>
           </form>
         </div>
+      </div>
       </div>
     );
   };

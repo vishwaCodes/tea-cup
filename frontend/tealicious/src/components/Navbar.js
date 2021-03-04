@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Navbar extends Component {
   render() {
@@ -41,7 +41,7 @@ class Navbar extends Component {
               <a className="nav-link" href="/login">Log In</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/signup">Sign Up</a>
+            <a className="nav-link" href="/signup">Sign Up</a>
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">

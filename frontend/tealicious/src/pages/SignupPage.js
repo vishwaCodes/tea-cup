@@ -19,6 +19,7 @@ class SignupPage extends Component {
   render() {
     const { username, email, password, password2 } = this.state;
     return (
+      <div className="container">
       <div className="col-md-6 m-auto">
         <div className="card card-body mt-5">
           <h2 className="text-center">Sign Up</h2>
@@ -73,6 +74,7 @@ class SignupPage extends Component {
             </p>
           </form>
         </div>
+      </div>
       </div>
     );
   };
