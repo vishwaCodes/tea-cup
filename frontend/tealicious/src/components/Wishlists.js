@@ -4,7 +4,7 @@ import Wishlist from './Wishlist';
 const Wishlists = (props) => {
   let wishlists = props.wishlists.map((wishlist) => {
     return (
-      <Tea
+      <Wishlist
         key={wishlist.id}
         wishlist={wishlist} />
     );
