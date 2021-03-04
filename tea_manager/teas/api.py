@@ -14,14 +14,20 @@ class TeaViewSet(viewsets.ModelViewSet):
 
 # Wishlist Viewset
 class WishlistViewSet(viewsets.ModelViewSet):
+
+  queryset = Wishlist.objects.all()
   permission_classes = [
-    permissions.IsAuthenticated
+    permissions.AllowAny
   ]
+  
+  # permission_classes = [
+  #   permissions.IsAuthenticated
+  # ]
 
   serializer_class = TeaSerializer
 
-  def get_queryset(self):
-    return self.request.user.wishlist.all()
+  # def get_queryset(self):
+  #   return self.request.user.wishlist.all()
 
-  def perform_create(self, serializer):
-    serializer.save(user=self.request.user)
+  # def perform_create(self, serializer):
+  #   serializer.save(user=self.request.user)

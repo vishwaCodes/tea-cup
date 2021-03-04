@@ -11,4 +11,4 @@ class TeaSerializer(serializers.ModelSerializer):
 class WishlistSerializer(serializers.ModelSerializer):
   class Meta:
     model = Wishlist
-    fiels = '__all__'
+    fields = 'name'
