@@ -20,15 +20,15 @@ class WishlistViewSet(viewsets.ModelViewSet):
     permissions.AllowAny
   ]
   
-  # permission_classes = [
-  #   permissions.IsAuthenticated
-  # ]
+  permission_classes = [
+    permissions.IsAuthenticated
+  ]
 
   serializer_class = WishlistSerializer
   lookup_field = 'id'
 
-  # def get_queryset(self):
-  #   return self.request.user.wishlist.all()
+  def get_queryset(self):
+    return self.request.user.wishlist.all()
 
-  # def perform_create(self, serializer):
-  #   serializer.save(user=self.request.user)
+  def perform_create(self, serializer):
+    serializer.save(user=self.request.user)
