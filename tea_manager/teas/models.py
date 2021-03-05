@@ -13,7 +13,7 @@ class Tea(models.Model):
 
 class Wishlist(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
-  name = models.CharField(max_length=100, blank=True, null=True)
+  name = models.CharField(max_length=100)
 
   def __str__(self):
     return self.name
