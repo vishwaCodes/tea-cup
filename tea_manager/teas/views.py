@@ -19,6 +19,14 @@ from rest_framework.decorators import api_view
 from teas.models import Wishlist
 from .serializers import WishlistSerializer
 
+@api_view(['GET'])
+def apiOverview(request):
+	api_urls = {
+		'Delete':'/api/wishlist/<str:pk>/',
+	}
+
+	return Response(api_urls)
+
 @api_view(['GET', ])
 def api_detail_wish_view(request, slug):
   try:
@@ -49,21 +57,30 @@ def api_update_wish_view(request, slug):
 
 
 
-@api_view(['DELETE', ])
-def api_delete_wish_view(request, slug):
-  try:
-    wish_post = Wishlist.objects.get(slug=slug)
-  except Wishlist.DoesNotExist:
-    return Response(status=status.HTTP_404_NOT_FOUND)
+# @api_view(['DELETE', ])
+# def api_delete_wish_view(request, slug):
+#   try:
+#     wish_post = Wishlist.objects.get(slug=slug)
+#   except Wishlist.DoesNotExist:
+#     return Response(status=status.HTTP_404_NOT_FOUND)
 
-  if request.method == "DELETE":
-    operation = wish_post.delete()
-    data = {}
-    if operation:
-      data["success"] = "delete successful"
-    else:
-      data["failure"] = "delete failed"
-    return Response(data=data)
+#   if request.method == "DELETE":
+#     operation = wish_post.delete()
+#     data = {}
+#     if operation:
+#       data["success"] = "delete successful"
+#     else:
+#       data["failure"] = "delete failed"
+#     return Response(data=data)
+
+
+@api_view(['DELETE'])
+def wishDelete(request, pk):
+	wishlist = Wishlist.objects.get(id=pk)
+	wishlist.delete()
+
+	return Response('Item succsesfully delete!')
+
 
 
 @api_view(['POST', ])
