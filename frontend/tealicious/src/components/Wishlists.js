@@ -6,7 +6,9 @@ const Wishlists = (props) => {
     return (
       <Wishlist
         key={wishlist.id}
-        wishlist={wishlist} />
+        wishlist={wishlist} 
+        deleteWishlist={props.deleteWishlist}
+      />
     );
   });
 

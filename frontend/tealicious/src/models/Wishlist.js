@@ -13,6 +13,11 @@ class WishlistModel {
     let request = axios.post(endPoint, wishlist);
     return request;
   };
+
+  static delete = (wishlist) => {
+    let request = axios.delete(`${endPoint}/${wishlist.id}`);
+    return request;
+  }
 };
 
 export default WishlistModel;

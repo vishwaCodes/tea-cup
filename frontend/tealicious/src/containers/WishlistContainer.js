@@ -39,6 +39,16 @@ class WishlistContainer extends Component {
     });
   };
 
+  deleteWishlist = (wishlist) => {
+    WishlistModel.delete(wishlist).then((res) => {
+      console.log(res);
+      let wishlists = this.state.wishlists.filter((wishlist) => {
+        return wishlist.id !== res.data.id;
+      });
+      this.setState({wishlists});
+    });
+  };
+
   render() {
     return (
       <div className="wishlistContainer">
@@ -49,6 +59,7 @@ class WishlistContainer extends Component {
 
       <Wishlists 
         wishlists={this.state.wishlists}
+        deleteWishlist={this.deleteWishlist}
       />
       </div>
     );
