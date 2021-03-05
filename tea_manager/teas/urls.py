@@ -9,7 +9,6 @@ router.register('api/wishlist', WishlistViewSet, 'wishlist')
 
 urlpatterns = router.urls
 
-
 # from django.urls import path
 
 # from .views import TeaListView, TeaDetailView

@@ -10,6 +10,7 @@ class TeaViewSet(viewsets.ModelViewSet):
     permissions.AllowAny
   ]
   serializer_class = TeaSerializer
+  lookup_field = 'id'
 
 
 # Wishlist Viewset
@@ -24,6 +25,7 @@ class WishlistViewSet(viewsets.ModelViewSet):
   # ]
 
   serializer_class = WishlistSerializer
+  lookup_field = 'id'
 
   # def get_queryset(self):
   #   return self.request.user.wishlist.all()
