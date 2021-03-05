@@ -43,9 +43,11 @@ class WishlistContainer extends Component {
     WishlistModel.delete(wishlist).then((res) => {
       console.log(res);
       let wishlists = this.state.wishlists.filter((wishlist) => {
-        return wishlist.id !== res.data.id;
+        console.log(wishlist.id)
+        console.log(wishlist)
+        return wishlist.id !== wishlist.id;
       });
-      this.setState({wishlists});
+      this.setState({wishlists:wishlists});
     });
   };
 
