@@ -39,13 +39,13 @@ class WishlistContainer extends Component {
     });
   };
 
-  deleteWishlist = (wishlist) => {
-    WishlistModel.delete(wishlist).then((res) => {
+  deleteWishlist = (wishlistId) => {
+    WishlistModel.delete(wishlistId).then((res) => {
       console.log(res);
       let wishlists = this.state.wishlists.filter((wishlist) => {
         console.log(wishlist.id)
         console.log(wishlist)
-        return wishlist.id !== wishlist.id;
+        return wishlist.id !== wishlistId.id;
       });
       this.setState({wishlists:wishlists});
     });

@@ -4,6 +4,7 @@ class Wishlist extends Component {
 
   deleteClickedWishlist = () => {
     this.props.deleteWishlist(this.props.wishlist);
+    console.log('deleted clicked wishlist', this.props.wishlist)
   };
 
   render() {
