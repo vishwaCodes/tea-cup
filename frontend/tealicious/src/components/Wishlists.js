@@ -8,6 +8,7 @@ const Wishlists = (props) => {
         key={wishlist.id}
         wishlist={wishlist} 
         deleteWishlist={props.deleteWishlist}
+        updateWishlist={props.updateWishlist}
       />
     );
   });

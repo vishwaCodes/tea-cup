@@ -51,6 +51,20 @@ class WishlistContainer extends Component {
     });
   };
 
+  updateWishlist = (wishlistItem) => {
+    const isUpdatedWishlistItem = w => {
+      return w.id === wishlistItem.id;
+    };
+
+    WishlistModel.update(wishlistItem)
+      .then((res) => {
+        console.log(res)
+        let wishlists = this.state.wishlists;
+        wishlists.find(isUpdatedWishlistItem).name = wishlistItem.name;
+        this.setState({ wishlists:wishlists });
+      });
+  };
+
   render() {
     return (
       <div className="wishlistContainer">
@@ -61,6 +75,7 @@ class WishlistContainer extends Component {
 
       <Wishlists 
         wishlists={this.state.wishlists}
+        updateWishlist={this.updateWishlist}
         deleteWishlist={this.deleteWishlist}
       />
       </div>
