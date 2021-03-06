@@ -4,13 +4,13 @@ import { ShopNavbar } from '../components';
 import Cart from '../components/Cart/Cart';
 
 const CartPage = () => {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState([{}]);
 
   const fetchCart = async () => {
     const cart = await commerce.cart.retrieve();
 
     setCart(cart);
-    console.log(cart);
+    // console.log(fetchCart());
   }
 
   const handleAddToCart = async (productId, quantity) => {
@@ -23,11 +23,13 @@ const CartPage = () => {
     fetchCart();
   }, []);
 
+  const p = cart.line_items.length
+  console.log(p);
+
   return (
     <div>
       <div>
         <ShopNavbar totalItems={cart.total_items} />
-        {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
         {/* <Cart cart={cart} /> */}
       </div>
     </div>

@@ -7,8 +7,6 @@ import LoginPage from '../pages/LoginPage';
 import WishlistPage from '../pages/WishlistPage';
 import ShopPage from '../pages/ShopPage';
 
-import CartPage from '../pages/CartPage';
-
 
 export default (
     <Switch>
@@ -18,7 +16,6 @@ export default (
       <Route path='/signup' component={SignupPage} />
       <Route path='/wishlist' component={WishlistPage} />
       <Route path='/shop' component={ShopPage} />
-      <Route path='/cart' component={CartPage} />
     </Switch>
 );
 

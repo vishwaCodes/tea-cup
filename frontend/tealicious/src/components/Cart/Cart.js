@@ -43,6 +43,9 @@ const Cart = ({ cart }) => {
 
   // if(!cart.line_items) return 'Loading';
 
+  // const p = cart.line_items.length;
+  // console.log(p);
+
   return (
     <Container>
       <div className={classes.toolbar} />
