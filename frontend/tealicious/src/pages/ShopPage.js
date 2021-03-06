@@ -32,7 +32,7 @@ const ShopPage = () => {
 
   return (
   <div>
-    <ShopNavbar />
+    <ShopNavbar totalItems={cart.total_items} />
     <Products products={products} onAddToCart={handleAddToCart} />
   </div>
   );
