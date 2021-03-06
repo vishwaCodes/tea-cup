@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from '../lib/commerce';
 import { Products, ShopNavbar, Cart } from '../components';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import routes from '../config/routes';
 
 
 const ShopPage = () => {
@@ -33,11 +35,18 @@ const ShopPage = () => {
   // console.log(cart);
 
   return (
-  <div>
-    <ShopNavbar totalItems={cart.total_items} />
-    {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
-    <Cart cart={cart} />
-  </div>
+    <Router>
+      <div>
+        <ShopNavbar totalItems={cart.total_items} />
+        <Switch>
+            <Products products={products} onAddToCart={handleAddToCart} />
+          <Route eaxct path='/cart'>
+            <Cart cart={cart} />
+          </Route>
+        </Switch>
+        {routes}
+      </div>
+    </Router>
   );
 };
 
