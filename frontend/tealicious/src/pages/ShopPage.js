@@ -35,6 +35,18 @@ const ShopPage = () => {
     setCart(cart);
   }
 
+  const handleRemoveFromCart = async (productId) => {
+    const { cart } = await commerce.cart.remove(productId);
+
+    setCart(cart);
+  }
+
+  const handleEmptyCart = async () => {
+    const { cart } = await commerce.cart.empty();
+
+    setCart(cart);
+  }
+
   useEffect(() => {
     fetchProducts();
     fetchCart();
@@ -44,15 +56,24 @@ const ShopPage = () => {
   return (
     // <div>
     //   <ShopNavbar totalItems={cart.total_items} />
-      // <Products products={products} onAddToCart={handleAddToCart} />
+    // <Products products={products} onAddToCart={handleAddToCart} />
     //   {/* <Cart cart={cart} /> */}
     // </div>
     <Router>
       <ShopNavbar totalItems={cart.total_items} />
-      <Products products={products} onAddToCart={handleAddToCart} />
+      <Switch>
+        <Route exact path='/shop'>
+          <Products products={products} onAddToCart={handleAddToCart} />
+        </Route>
+      </Switch>
       <Switch>
         <Route exact path='/cart'>
-          <Cart cart={cart} />
+          <Cart
+            cart={cart}
+            handleUpdateCartQty={handleUpdateCartQty}
+            handleRemoveFromCart={handleRemoveFromCart}
+            handleEmptyCart={handleEmptyCart}
+          />
         </Route>
       </Switch>
     </Router>
