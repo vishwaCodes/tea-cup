@@ -5,7 +5,9 @@ import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
 
 const Cart = ({ cart }) => {
-  
+
+  console.log(cart);
+
   const classes = useStyles();
 
   const EmptyCart = () => {
@@ -45,7 +47,7 @@ const Cart = ({ cart }) => {
     <Container>
       <div className={classes.toolbar} />
       <Typography className={classes.title} variant='h3' gutterBottom>Your Shopping Cart</Typography>
-      { !cart.line_items.length ? <EmptyCart /> : <FilledCart /> }
+      { !cart.line_items.length ? <EmptyCart/> : <FilledCart />}
     </Container>
   );
 };
