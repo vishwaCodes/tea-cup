@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from '../lib/commerce';
 import { Products, ShopNavbar, Cart } from '../components';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import routes from '../config/routes';
 
 
 const ShopPage = () => {
@@ -18,7 +16,8 @@ const ShopPage = () => {
   const fetchCart = async () => {
     const cart = await commerce.cart.retrieve();
 
-    setCart(cart);
+    setCart(cart)
+    console.log(cart)
   }
 
   const handleAddToCart = async (productId, quantity) => {
@@ -35,18 +34,11 @@ const ShopPage = () => {
   // console.log(cart);
 
   return (
-    <Router>
       <div>
         <ShopNavbar totalItems={cart.total_items} />
-        <Switch>
-            <Products products={products} onAddToCart={handleAddToCart} />
-          <Route eaxct path='/cart'>
-            <Cart cart={cart} />
-          </Route>
-        </Switch>
-        {routes}
+        <Products products={products} onAddToCart={handleAddToCart} />
+        {/* <Cart cart={cart} /> */}
       </div>
-    </Router>
   );
 };
 

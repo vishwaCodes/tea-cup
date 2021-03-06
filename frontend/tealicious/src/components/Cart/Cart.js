@@ -39,7 +39,7 @@ const Cart = ({ cart }) => {
     </>
   );
 
-  if(!cart.line_items) return 'Loading';
+  // if(!cart.line_items) return 'Loading';
 
   return (
     <Container>
