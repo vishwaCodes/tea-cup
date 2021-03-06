@@ -1,39 +1,42 @@
-import React, {useState, useEffect} from 'react';
-import { commerce } from '../lib/commerce';
-import { ShopNavbar } from '../components';
-import Cart from '../components/Cart/Cart';
+// import React, { useState, useEffect } from 'react';
+// import { commerce } from '../lib/commerce';
+// import { ShopNavbar } from '../components';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import Cart from '../components/Cart/Cart';
 
-const CartPage = () => {
-  const [cart, setCart] = useState([{}]);
+// const CartPage = () => {
+//   const [cart, setCart] = useState([{}]);
 
-  const fetchCart = async () => {
-    const cart = await commerce.cart.retrieve();
+//   const fetchCart = async () => {
+//     const cart = await commerce.cart.retrieve();
 
-    setCart(cart);
-    // console.log(fetchCart());
-  }
+//     setCart(cart);
+//     // console.log(fetchCart());
+//   }
 
-  const handleAddToCart = async (productId, quantity) => {
-    const item = await commerce.cart.add(productId, quantity);
+//   // const handleAddToCart = async (productId, quantity) => {
+//   //   const item = await commerce.cart.add(productId, quantity);
 
-    setCart(item.cart);
-  }
+//   //   setCart(item.cart);
+//   // }
 
-  useEffect(() => {
-    fetchCart();
-  }, []);
+//   useEffect(() => {
+//     fetchCart();
+//   }, []);
 
-  const p = cart.line_items.length
-  console.log(p);
+//   const p = cart.line_items.length
+//   console.log(p);
 
-  return (
-    <div>
-      <div>
-        <ShopNavbar totalItems={cart.total_items} />
-        {/* <Cart cart={cart} /> */}
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <Router>
+//       <ShopNavbar totalItems={cart.total_items} />
+//       <Switch>
+//         <Route exact path='/cart'>
+//           <Cart cart={cart} />
+//         </Route>
+//       </Switch>
+//     </Router>
+//   );
+// };
 
-export default CartPage;
+// export default CartPage;
