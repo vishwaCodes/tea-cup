@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from '../lib/commerce';
-import { Products, ShopNavbar } from '../components';
+import { Products, ShopNavbar, Cart } from '../components';
 
 
 const ShopPage = () => {
@@ -13,8 +13,10 @@ const ShopPage = () => {
     setProducts(data);
   }
 
-  const fetchCart  = async () => {
-    setCart(await commerce.cart.retrieve())
+  const fetchCart = async () => {
+    const cart = await commerce.cart.retrieve();
+
+    setCart(cart);
   }
 
   const handleAddToCart = async (productId, quantity) => {
@@ -28,12 +30,13 @@ const ShopPage = () => {
     fetchCart();
   }, []);
 
-  console.log(cart);
+  // console.log(cart);
 
   return (
   <div>
     <ShopNavbar totalItems={cart.total_items} />
-    <Products products={products} onAddToCart={handleAddToCart} />
+    {/* <Products products={products} onAddToCart={handleAddToCart} /> */}
+    <Cart cart={cart} />
   </div>
   );
 };
