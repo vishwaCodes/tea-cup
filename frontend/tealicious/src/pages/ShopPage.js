@@ -16,12 +16,10 @@ const ShopPage = () => {
     fetchProducts();
   }, []);
 
-  console.log(products);
-
   return (
   <div>
     <ShopNavbar />
-    <Products />
+    <Products products={products} />
   </div>
   );
 };
