@@ -47,7 +47,7 @@ const Checkout = ({ cart }) => {
 
   const Form = () => activeStep === 0
   ? <AddressForm checkoutToken={checkoutToken} next={next} />
-  : <PaymentForm shippingData={shippingData} checkoutToken={checkoutToken} />
+  : <PaymentForm shippingData={shippingData} checkoutToken={checkoutToken} backStep={backStep} />
 
   return (
     <>
@@ -55,7 +55,7 @@ const Checkout = ({ cart }) => {
       <main className={classes.layout}>
         <Paper className={classes.paper}>
           <Typography variant='h4' align='center'>Checkout</Typography>
-          <Stepper activeStep={0} className={classes.stepper}>
+          <Stepper activeStep={activeStep} className={classes.stepper}>
             {steps.map((step) => (
               <Step key={step}>
                 <StepLabel>{step}</StepLabel>
