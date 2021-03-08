@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
 
-const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart}) => {
+const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart }) => {
 
   console.log(cart);
 
   const classes = useStyles();
 
   const EmptyCart = () => {
-    <>
-      <Typography variant='subtitle1'>You have  no items in your shopping cart
+    return (
+      <Typography variant='subtitle1'>You have  no items in your shopping cart, 
         <Link to='/shop' className={classes.link} >Would you like to add some?</Link>
       </Typography>
-    </>
+    );
   };
 
   const FilledCart = () => (
@@ -36,7 +36,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
             variant='contained' color='secondary'>
             Empty Cart
           </Button>
-          <Button component={Link} to='/checkout' 
+          <Button component={Link} to='/checkout'
             className={classes.checkoutButton} size='large' type='button'
             variant='contained' color='primary'>
             Checkout

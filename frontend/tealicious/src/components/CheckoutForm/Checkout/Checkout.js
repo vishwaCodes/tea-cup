@@ -9,7 +9,7 @@ import PaymentForm from '../PaymentForm';
 
 const steps = ['Shipping Information', 'Payment Details'];
 
-const Checkout = ({ cart }) => {
+const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
   const [activeStep, setActiveStep] = useState(0);
   const [checkoutToken, setCheckoutToken] = useState(null);
   const [shippingData, setShippingData] = useState({});
@@ -22,7 +22,7 @@ const Checkout = ({ cart }) => {
 
         setCheckoutToken(token);
       } catch (error) {
-        
+
       }
     }
 
@@ -40,14 +40,16 @@ const Checkout = ({ cart }) => {
   }
 
   const Confirmation = () => {
-    <div>
-      Confirmation
-    </div>
-  }
+    return (
+      <div>
+        Confirmation
+      </div>
+    );
+  };
 
   const Form = () => activeStep === 0
-  ? <AddressForm checkoutToken={checkoutToken} next={next} />
-  : <PaymentForm shippingData={shippingData} checkoutToken={checkoutToken} backStep={backStep} />
+    ? <AddressForm checkoutToken={checkoutToken} next={next} />
+    : <PaymentForm shippingData={shippingData} checkoutToken={checkoutToken} nextStep={nextStep} backStep={backStep} onCaptureCheckout={onCaptureCheckout} />
 
   return (
     <>
@@ -62,7 +64,7 @@ const Checkout = ({ cart }) => {
               </Step>
             ))}
           </Stepper>
-          {activeStep === steps.length ? <Confirmation /> : checkoutToken && <Form /> }
+          {activeStep === steps.length ? <Confirmation /> : checkoutToken && <Form />}
         </Paper>
       </main>
     </>
