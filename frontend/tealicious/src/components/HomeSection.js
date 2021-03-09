@@ -40,18 +40,17 @@ const HomeSection = () => {
                 Beatae eos quidem quod illo!
               </p>
               <div className="btn-wrapper mb-3">
-                <p className="category text-success d-inline">
+                <p id="aboutPara" className="category d-inline">
                   About us
-                </p>
-                <Button
+                  <Button
                   className="btn-link"
-                  color="success"
+                  color=""
                   href="/about"
-                  onClick={(e) => e.preventDefault()}
-                  size="sm"
+                  size="lg"
                 >
-                  <i className="tim-icons icon-minimal-right" />
+                  <i id="forwardIcon" class="fas fa-chevron-right"></i>
                 </Button>
+                </p>
               </div>
               <div className="btn-wrapper">
                 <div className="button-container">
@@ -82,11 +81,11 @@ const HomeSection = () => {
                 </div>
               </div>
             </Col>
-            <Col lg="4" md="5">
+            <Col lg="5" md="6">
               <img
                 alt="..."
                 className="img-fluid"
-                src={teaplantation}
+                src="https://images.unsplash.com/photo-1539398100550-fbe9dff24993?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1129&q=80"
               />
             </Col>
           </Row>

@@ -142,7 +142,7 @@
   background: -webkit-linear-gradient(0deg, #7b88c2 0%, #7094b8 100%);
   background: -o-linear-gradient(0deg, #5d6585 0%, #25394d 100%);
   background: -moz-linear-gradient(0deg, #596288 0%, #59738f 100%);
-  background: linear-gradient(0deg, #657097 0%, #5b768f 100%); 
+  background: linear-gradient(0deg, #657097 0%, #5b768f 100%);
   position: absolute;
   transition: 0.5s ease-out;
   overflow: hidden;
@@ -297,25 +297,58 @@
   }
 }
 
-
 .masthead {
-  position: relative; 
+  position: relative;
   height: 100%;
-  width: 100%; 
+  width: 100%;
   min-height: 60rem;
   min-width: 90rem;
   padding: 15rem 5;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 75%, #00000000 100%), url('https://cdn.dribbble.com/users/909752/screenshots/6740452/9aab6e8e-1d91-470e-b5f2-4db86529c310.jpg?compress=1&resize=800x600');  
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-attachment: scroll; 
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 75%, #00000000 100%), url('https://cdn.dribbble.com/users/909752/screenshots/6740452/9aab6e8e-1d91-470e-b5f2-4db86529c310.jpg?compress=1&resize=800x600');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: contain;
   background-color: #463e47;
 }
 
 .page-header {
   background-color: #463e47;
+  font-family: 'Poppins', sans-serif;
 }
 
+#homeNav {
+  font-family: 'Poppins', sans-serif;
+}
 
+.d-inline {
+  display: inline !important;
+}
+
+.btn-link {
+  border: 0;
+  box-shadow: none;
+  padding: 0.5rem 0.7rem;
+  background: transparent;
+  color: #e3e3e3;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  background: transparent;
+}
+
+#aboutPara {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#aboutPara:hover {
+  background-color: transparent;
+}
+
+#forwardIcon:hover {
+  color: #bbcad8;
+}
 
