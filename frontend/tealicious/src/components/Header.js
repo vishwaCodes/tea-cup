@@ -5,6 +5,9 @@ import { Container } from 'reactstrap';
 const Header = () => {
   return (
     <div className="index-page">
+      <div className="masthead">
+        
+      </div>
       <div className="page-header header-filter">
         <div className="squares square1" />
         <div className="squares square2" />
@@ -18,6 +21,7 @@ const Header = () => {
             <h1 className="h1-seo">Teaberry</h1>
             <h3 className="d-none d-sm-block">
               Exquisite Teas from all over the world.
+              <br />
               Wishing you happy brews!
         </h3>
           </div>

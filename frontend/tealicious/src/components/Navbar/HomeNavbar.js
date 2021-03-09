@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class HomeNavbar extends Component {
   render() {
-    return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    return ( 
+      <nav id='homeNav' className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <a className="navbar-brand" href="/">Teaberry</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
