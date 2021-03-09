@@ -33,6 +33,9 @@ const AddressForm = ({ checkoutToken, next }) => {
     const options = await commerce.checkout.getShippingOptions(checkoutTokenId, { country, region: stateProvince });
 
     setShippingOptions(options);
+    console.log(options);
+    console.log(options[0]);
+
     setShippingOption(options[0].id);
   };
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from '../lib/commerce';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useHistory } from 'react-router-dom';
 import { Products, ShopNavbar, Cart, Checkout } from '../components';
 
 
@@ -9,6 +9,7 @@ const ShopPage = () => {
   const [cart, setCart] = useState({});
   const [order, setOrder] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
+
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -71,6 +72,7 @@ const ShopPage = () => {
     fetchCart();
   }, []);
 
+  // const history = useHistory();
 
   return (
     // <div>
@@ -79,7 +81,7 @@ const ShopPage = () => {
     //   {/* <Cart cart={cart} /> */}
     // </div>
     <Router>
-      <div>
+          <div>
         <ShopNavbar totalItems={cart.total_items} />
         <Switch>
           <Route exact path='/shop'>

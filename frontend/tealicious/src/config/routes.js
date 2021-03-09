@@ -11,11 +11,11 @@ import ShopPage from '../pages/ShopPage';
 export default (
     <Switch>
       <Route exact path='/' component={HomePage} />
-      <Route path='/teas' component={TeasPage} />
-      <Route path='/login' component={LoginPage} />
-      <Route path='/signup' component={SignupPage} />
-      <Route path='/wishlist' component={WishlistPage} />
-      <Route path='/shop' component={ShopPage} />
+      <Route exact path='/teas' component={TeasPage} />
+      <Route exact path='/login' component={LoginPage} />
+      <Route exact path='/signup' component={SignupPage} />
+      <Route exact path='/wishlist' component={WishlistPage} />
+      <Route exact path='/shop' component={ShopPage} />
     </Switch>
 );
 

@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Typography, Button, Grid } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
 
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart }) => {
+
+  // const history = useHistory();
+
+  // useEffect(() => {
+  //   history.push('/cart');
+  // })
 
   console.log(cart);
 
@@ -45,6 +51,8 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
       </div>
     </>
   );
+
+
 
   // if(!cart.line_items) return 'Loading';
 
