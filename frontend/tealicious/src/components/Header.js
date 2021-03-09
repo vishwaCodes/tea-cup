@@ -12,38 +12,35 @@ const Header = () => {
           {/* <div className="masthead">
           </div> */}
 
-          <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+          <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
             <ol className="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
             </ol>
             <div className="carousel-inner" role="listbox">
               
-        <div className="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+        <div className="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1531970227416-f0cddeb1f748?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1900&h=820" alt=""/>
                 <div className="carousel-caption d-none d-md-block">
-                  <h3>First Slide</h3>
-                  <p>This is a description for the first slide.</p>
                 </div>
               </div>
-        <div className="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+        <div className="carousel-item">
+          <img src="https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=820" alt=""/>
                 <div className="carousel-caption d-none d-md-block">
-                  <h3>Second Slide</h3>
-                  <p>This is a description for the second slide.</p>
                 </div>
               </div>
-        <div className="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+        <div className="carousel-item">
+          <img src="https://images.unsplash.com/photo-1492778297155-7be4c83960c7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=820" alt=""/>
                 <div className="carousel-caption d-none d-md-block">
-                  <h3>Third Slide</h3>
-                  <p>This is a description for the third slide.</p>
                 </div>
               </div>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>
               <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
               <span className="carousel-control-next-icon" aria-hidden="true"></span>
               <span className="sr-only">Next</span>
             </a>
