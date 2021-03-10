@@ -1,4 +1,4 @@
-# Tealicious
+# Teaberry
 Your go-to place for everything tea realated! An E-Commerce Store just for tea, with a modern UI reeling the User in.
 
 # Teachnologies Used
