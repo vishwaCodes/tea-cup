@@ -21,7 +21,6 @@ Your go-to place for everything tea realated! An E-Commerce Store just for tea, 
 - Django + React Stack
 - Commerce.js
 - Stripe
-- Redux
 - React Hook Form
 - Material UI
 
