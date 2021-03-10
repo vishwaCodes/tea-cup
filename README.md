@@ -3,6 +3,7 @@ Your go-to place for everything tea realated! An E-Commerce Store just for tea, 
 
 # Teachnologies Used
 - Django
+- Python
 - Django REST Framework
 - PostgreSQL
 - React.js
