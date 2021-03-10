@@ -38,9 +38,8 @@ const HomeSection = () => {
         </div>
       </div>
 
-
-      <div id="journal" className="row text-center bg-primary">
-        <div className="col-6">
+          <div id="journal" className="row text-center bg-primary">
+        <div className="col-xl-3 col-sm-6 mb-5">
           <div className="card bg-primary">
             <img className="card-img-top" src="https://cdn.dribbble.com/users/432958/screenshots/9840101/media/a389d21495c76e91c35a6bbb702053da.png?compress=1&resize=800x600" alt="Card image cap" />
             <div className="card-body">
@@ -49,7 +48,7 @@ const HomeSection = () => {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-xl-3 col-sm-6 mb-5">
           <div className="card bg-primary">
             <img className="card-img-top" src="https://cdn.dribbble.com/users/432958/screenshots/9840101/media/a389d21495c76e91c35a6bbb702053da.png?compress=1&resize=800x600" alt="Card image cap" />
             <div className="card-body">
@@ -59,7 +58,6 @@ const HomeSection = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

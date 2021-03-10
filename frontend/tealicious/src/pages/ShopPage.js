@@ -3,6 +3,7 @@ import { commerce } from '../lib/commerce';
 import { BrowserRouter as Router, Switch, Route, useHistory } from 'react-router-dom';
 import { Products, ShopNavbar, Cart, Checkout } from '../components';
 
+import '../App.css';
 
 const ShopPage = () => {
   const [products, setProducts] = useState([]);

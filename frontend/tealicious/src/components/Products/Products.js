@@ -8,6 +8,8 @@ import useStyles from './styles';
 const Products = ({ products, onAddToCart }) => {
   const classes = useStyles();
   return (
+    
+    <div className="bg-primary">
     <main className={classes.content}>
     <div className={classes.toolbar} />
     <Grid container justify='center' spacing={4}>
@@ -18,6 +20,8 @@ const Products = ({ products, onAddToCart }) => {
       ))}
     </Grid>
   </main>
+    </div>
+
   );
 };
 

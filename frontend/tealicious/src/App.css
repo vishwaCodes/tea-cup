@@ -12,22 +12,28 @@
 
 .wishlistContainer {
   width: 60%;
+  height: 80% !important;
   max-width: 600px;
   min-width: 500px;
+  max-height: 500px;
   margin: 30px auto;
   background: #fcfcfc;
   padding: 1.5rem 2rem;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   color: black;
+  font-size: 16px;
 }
 
-.btn:hover {
-  background-color: #303030;
+#newItemDescription {
+  width: 50%;
+  height: 30% !important;
 }
+
 
 .remove, .edit {
   float: right;
   cursor: pointer;
+  margin-left: 5%;
 }
 
 @media screen and (max-width: 576px) {
@@ -377,4 +383,20 @@
 
 .card {
   width: 25rem;
+}
+
+.WishlistPage body, html {
+  background-color: #1a1a1a !important;
+}
+
+.HomeSection body, html {
+  background-color: #1a1a1a !important;
+}
+
+#wishlistDiv {
+  margin-top: 15%;
+}
+
+.ShopPage body, html {
+  background-color: #1a1a1a !important;
 }
