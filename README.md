@@ -14,6 +14,7 @@ Your go-to place for everything tea realated! An E-Commerce Store just for tea, 
 - Reactstrap
 - Bootstrap
 - Material UI
+- Custom CSS
 
 # Things Learned
 - Django REST Framework
