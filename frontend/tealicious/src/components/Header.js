@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { CssBaseline } from '@material-ui/core';
-import { Container } from 'reactstrap';
+import { Container, Button } from 'reactstrap';
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="carousel-item">
-                <img src="https://images.unsplash.com/photo-1523905330026-b8bd1f5f320e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=820" alt="" />
+                <img src="https://images.unsplash.com/photo-1598084414381-bd9ada5d4412?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=820" alt="" />
                 <div className="carousel-caption d-none d-md-block">
                 </div>
               </div>
@@ -58,10 +58,14 @@ const Header = () => {
               <div className="content-center brand">
                 <h3 className="font-weight-light text-white">Exquisite Teas from around the World.</h3>
                 <p id="para1" className="display-5 font-italic text-muted">Crafted by Tea Lovers, for Tea Lovers.</p>
-                <p id="para2" className="display-5 font-italic text-muted">Wishing you Happy Brews!</p>
+                {/* <p id="para2" className="display-5 font-italic text-muted">Wishing you Happy Brews!</p> */}
+                <Button href="/about" type="submit">Learn More</Button>
               </div>
             </Container>
           </div>
+
+          
+
         </div>
       </header>
     </>
