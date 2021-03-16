@@ -22,12 +22,6 @@ class AboutNavbar extends Component {
             <li className="nav-item">
               <a className="nav-link" href="/wishlist">Wishlist</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/login">Log In</a>
-            </li>
-            <li className="nav-item">
-            <a className="nav-link" href="/signup">Sign Up</a>
-            </li>
           </ul>
         </div>
       </nav>

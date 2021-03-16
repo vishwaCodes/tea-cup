@@ -22,7 +22,7 @@ class HomeNavbar extends Component {
             <li className="nav-item">
               <a className="nav-link" href="/wishlist">Wishlist</a>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="/">Action</a>
@@ -31,7 +31,7 @@ class HomeNavbar extends Component {
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="/">Separated link</a>
               </div>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="/login">Log In</a>
             </li>

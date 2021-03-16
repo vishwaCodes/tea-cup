@@ -1,3 +1,9 @@
+html, body {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
 @keyframes move-left-right {
   0% {
     transform: translateX(-10px);
@@ -385,7 +391,7 @@
   width: 25rem;
 }
 
-.WishlistPage body, html {
+/* .WishlistPage body, html {
   background-color: #1a1a1a !important;
 }
 
@@ -403,5 +409,33 @@
 
 .SignupPage {
   background-color: #1a1a1a !important;
+} */
+
+#addItemLink {
+  color: white !important;
 }
 
+#addItemH2 {
+  color: white !important;
+}
+
+#subtotalH2 {
+  color: white !important;
+}
+
+#checkoutButton {
+  background-color: rgb(78, 124, 111) !important;
+  color: white !important;
+}
+
+#checkoutButton:hover {
+  background-color: #345a50 !important;
+}
+
+#emptyCartButton {
+  background-color: rgb(136, 74, 74) !important;
+}
+
+#emptyCartButton:hover {
+  background-color: rgb(99, 52, 52) !important;
+}

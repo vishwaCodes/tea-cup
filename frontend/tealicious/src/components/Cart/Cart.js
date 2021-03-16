@@ -15,9 +15,10 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
 
   const EmptyCart = () => {
     return (
-      <Typography variant='subtitle1'>You have  no items in your shopping cart, 
-        <Link to='/shop' className={classes.link} >Would you like to add some?</Link>
-      </Typography>
+      <div>
+        <h2 id='addItemH2'>You have no items in your shopping cart,</h2>
+        <Link id='addItemLink' to ='/shop'>Would you like to add some?</Link>
+      </div>
     );
   };
 
@@ -31,14 +32,14 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
         ))}
       </Grid>
       <div className={classes.cardDetails}>
-        <Typography variant='h4'>Subtotal: {cart.subtotal.formatted_with_symbol}</Typography>
+        <h2 id='subtotalH2'>Subtotal: {cart.subtotal.formatted_with_symbol}</h2>
         <div>
-          <Button onClick={handleEmptyCart}
+          <Button id='emptyCartButton' onClick={handleEmptyCart}
             className={classes.emptyButton} size='large' type='button'
             variant='contained' color='secondary'>
             Empty Cart
           </Button>
-          <Button component={Link} to='/checkout'
+          <Button id='checkoutButton' component={Link} to='/checkout'
             className={classes.checkoutButton} size='large' type='button'
             variant='contained' color='primary'>
             Checkout
