@@ -34,7 +34,7 @@ const HomeSection = () => {
             <div className="py-5 bg-image-full">
               <img src="https://images.unsplash.com/photo-1512393144765-a04c69cf4f86?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""/>
             </div>
-            <Button id="shop" >Shop Now</Button>
+            <Button href='/shop' id="shop" type="submit">Shop Now</Button>
           </div>
         </div>
       </div>

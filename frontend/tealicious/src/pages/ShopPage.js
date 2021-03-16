@@ -20,9 +20,6 @@ const ShopPage = () => {
   }
 
   const fetchCart = async () => {
-    // const response = await commerce.cart.retrieve();
-
-    // setCart(response.cart);
 
     setCart(await commerce.cart.retrieve());
   }

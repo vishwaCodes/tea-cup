@@ -6,6 +6,8 @@ import useStyles from './styles';
 import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
 
+import '../../../App.css';
+
 const steps = ['Shipping Information', 'Payment Details'];
 
 const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
@@ -37,13 +39,6 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     nextStep();
   }
 
-  // const timeout = () => {
-  //   setTimeout(() => {
-      
-  //   }, 3000);
-  // }
-
-
   let Confirmation = () => order.customer ? (
       <>
       <div>
@@ -52,7 +47,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
         <Typography variant='subtitle2'>Order Ref: {order.customer_reference}</Typography>
       </div>
       <br />
-      <Button component={Link} to='/' variant='outlined' type='button'>Back to Home</Button>
+      <Button component={Link} to='/shop' variant='outlined' type='button'>Back to Shop</Button>
       </>
     ) : (
       <div className={classes.spinner}>

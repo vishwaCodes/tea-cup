@@ -179,7 +179,7 @@
 }
 
 .index-page .squares {
-  animation: move-left-right 1.5s infinite;
+  animation: move-left-right 1s infinite;
   background: #ab9fd6;
   background: -webkit-linear-gradient(0deg, #654b74 0%, #252338 100%);
   background: -o-linear-gradient(0deg, #715aa7 0%, #7d6c9b 100%);
@@ -398,6 +398,10 @@
 }
 
 .ShopPage body, html {
+  background-color: #1a1a1a !important;
+}
+
+.SignupPage {
   background-color: #1a1a1a !important;
 }
 

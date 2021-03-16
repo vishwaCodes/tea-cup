@@ -5,13 +5,9 @@ import { Link, useHistory } from 'react-router-dom';
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
 
+import '../../App.css';
+
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart }) => {
-
-  // const history = useHistory();
-
-  // useEffect(() => {
-  //   history.push('/cart');
-  // })
 
   console.log(cart);
 

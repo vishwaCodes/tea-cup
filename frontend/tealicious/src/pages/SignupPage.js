@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import AboutNavbar from '../components/Navbar/AboutNavbar';
+
+import '../App.css';
+
 class SignupPage extends Component {
   state = {
     username: '',
@@ -17,6 +21,7 @@ class SignupPage extends Component {
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
+    <AboutNavbar />
     const { username, email, password, password2 } = this.state;
     return (
       <div className="container">
