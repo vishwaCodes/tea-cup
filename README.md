@@ -25,6 +25,18 @@ Your go-to place for everything tea realated! An E-Commerce Store just for tea, 
 - React Hook Form
 - Material UI
 
+# Preview
+
+<img width="1436" alt="Screen Shot 2021-04-13 at 7 08 32 PM" src="https://user-images.githubusercontent.com/73917422/114632870-8031c800-9c8d-11eb-8c48-3ee7fc4b26d7.png">
+
+
+<img width="1437" alt="Screen Shot 2021-04-13 at 7 09 16 PM" src="https://user-images.githubusercontent.com/73917422/114632759-54164700-9c8d-11eb-8553-5fe8aa851941.png">
+
+<img width="1439" alt="Screen Shot 2021-04-13 at 7 09 32 PM" src="https://user-images.githubusercontent.com/73917422/114632779-5d9faf00-9c8d-11eb-9c62-c22bf9404a75.png">
+
+<img width="1440" alt="Screen Shot 2021-04-13 at 7 09 02 PM" src="https://user-images.githubusercontent.com/73917422/114632795-66908080-9c8d-11eb-9638-df4d8867ed86.png">
+
+
 # Wireframes
 <img width="892" alt="Screen Shot 2021-03-02 at 10 57 16 AM" src="https://user-images.githubusercontent.com/73917422/109675768-15e21f80-7b46-11eb-8d68-c47f6e137fb0.png">
 
