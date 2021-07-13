@@ -17,7 +17,7 @@ Your go-to place for everything tea realated! An E-Commerce Store just for tea, 
 - Material UI
 - Custom CSS
 
-# Things Learned
+# Technologies Learned
 - Django REST Framework
 - Django + React Stack
 - Commerce.js
